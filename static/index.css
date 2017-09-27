@@ -21,26 +21,27 @@ body {
 #avatar {
     height: 180px;
     border-radius: 100%;
-    border: 2px solid white;
+    border: 1px solid black;
     margin-bottom: 40px;
 }
 h1 {
-    color: white;
+    color: black;
     font-weight: medium;
     letter-spacing: 0.05em;
     font-size: 3em;
     font-family: Avenir Next;
     padding-top: 20px;
+    padding-bottom: 40px;
     margin: -20px 0;
 }
-h2 {
-    color: white;
+/* h2 {
+    color: #a5a5a5;
     font-weight: normal;
     font-family: Avenir Next;
     padding-bottom: 40px;
-}
+} */
 h3 {
-    color: white;
+    color: black;
     font-weight: normal;
     font-family: Avenir Next;
     padding-bottom: 20px;
@@ -49,7 +50,7 @@ h3 {
     padding-top: 100px;
     padding-bottom: 40px;
 /*     background-color: rgba(0, 0, 0, 0.65); */
-    background-color: #607d8b;
+    background-color: white;
     text-align: center;
 }
 ul {
@@ -57,9 +58,9 @@ ul {
     padding: 0;
 }
 li {
-    border-radius: 100%;
-    border: 2px solid white;
-    color: white;
+    /* border-radius: 100%; */
+    /* border: 2px solid black; */
+    color: black;
     margin: 8px;
     display: inline-block;
     list-style: none;
@@ -67,7 +68,7 @@ li {
     height: 65px;
 }
 li:hover {
-    color: white;
+    color: black;
     text-decoration: none;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
@@ -76,10 +77,23 @@ li:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 a {
-    color: white;
+    color: black;
     padding: 15px;
     text-decoration: none;
 }
+
+.nav {
+    text-align: center;
+}
+
+.nav a {
+    color: #004B6B;
+}
+
+.nav a:hover {
+    color: #6D4100;
+}
+
 .description {
     display: none;
 }
@@ -91,7 +105,8 @@ ul {
 li {
     border-radius: 0%;
     border: none;
-    color: white;
+    /* color: white; */
+    color: black;
     margin: 8px;
     display: block;
     list-style: none;
@@ -104,26 +119,43 @@ li:hover {
     background-color: none;
     transition: none;
 }
+
 a {
     text-align: justify;
-    border: 2px solid white;
+    /* border: 2px solid black; */
     border-radius: 5px;
-    color: white;
+    color: black;
     padding: 15px;
     padding-left: 30px;
     width: 70%;
 }
-a:hover {
+/* a:hover {
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     transition: 500ms;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color:black;
+    text-decoration: none;
+} */
+
+li a {
+    border: 2px solid black;
+}
+
+li a:hover {
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    transition: 500ms;
+    background-color: rgba(0, 0, 0, 0.15);
+    color:black;
     text-decoration: none;
 }
+
+
+
 .description {
     display: inline-block;
-    color: white;
+    color: black;
     font-family: Arial;
     margin-left: 40px;
 }
