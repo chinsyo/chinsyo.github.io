@@ -1,6 +1,6 @@
 body {
     font-family: "Avenir Next";
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: white;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -44,7 +44,7 @@ h3 {
 .content {
     padding-top: 100px;
     padding-bottom: 40px;
-    background-color: white;
+    /* background-color: white; */
     text-align: center;
 }
 ul {
