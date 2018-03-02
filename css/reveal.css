@@ -464,9 +464,9 @@ a:focus {
     width: 700px;
     padding-bottom: 400px;
 
-    background-image: url(http://i758.photobucket.com/albums/xx224/onevcat/ou-gi.jpg);
+    /* background-image: url(http://i758.photobucket.com/albums/xx224/onevcat/ou-gi.jpg);
     background-position: bottom right;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 #overview { display: none }
