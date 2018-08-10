@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <body>
+    <head>
+        <link href="https://cdn.bootcss.com/uikit/3.0.0-rc.3/css/uikit.min.css" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/uikit/3.0.0-rc.3/js/uikit-icons.min.js"></script>
+        <script src="https://cdn.bootcss.com/uikit/3.0.0-rc.3/js/uikit.min.js"></script>
+    </head>
+    <body class="uk-background-primary">
+            <nav class="uk-navbar-container" uk-navbar>
+                    <div class="uk-navbar-left">
+                
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li>
+                                <a href="#">Parent</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                
+                    </div>
+                </nav>
         <h1>FAQ</h1>
-        <p>
-            <a href="http://baidu.com">User Manual</a>
-            <a href="http://sina.com">Promo Code</a>
-        </p>
+        <ul uk-accordion="collapsible: false">
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">Item 1</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Item 2</a>
+                    <div class="uk-accordion-content">
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Item 3</a>
+                    <div class="uk-accordion-content">
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                    </div>
+                </li>
+            </ul>
     </body>
 </html>
