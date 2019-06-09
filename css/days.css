@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: content-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #E8CBC0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body {
+    text-align: center;
+    color: white;
+    padding-top: 2em;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0 auto;
+    font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", STSong, NSimSun, SimSun, "WenQuanYi Bitmap Song", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+}
+
+.wrapper {
+    padding: 2.5em 0 2.5em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    border: 5px solid white;
+    margin: 0 auto;
+    padding: 50px 25px 50px 25px;
+    display: inline-block;
+}
+
+.avatar {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    margin: 0 0.5em 0 0.5em;
+    display: block;
+}
