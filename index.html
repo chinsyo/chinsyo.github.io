@@ -1,0 +1,46 @@
+---
+layout: page
+description: "得到的都是侥幸 失去的都是人生"
+---
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.dir }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {% if post.lang == 'en' %}
+                {{ post.content | strip_html | truncate:200 }}
+            {% else %}
+                {{ post.content | strip_html | truncate:150 }}
+            {% endif %}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.dir | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.dir | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
