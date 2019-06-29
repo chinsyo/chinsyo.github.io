@@ -9,3 +9,5 @@ exclude:
   - "README.md"
   - "LICENSE"
   - "CNAME"
+
+permalink: /:title
