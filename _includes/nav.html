@@ -52,10 +52,10 @@
             // wait until animation end.
             setTimeout(function(){
                 // prevent frequently toggle
-                if($navbar.className.indexOf('in') < 0) {
+                if ($navbar.className.indexOf('in') < 0) {
                     $collapse.style.height = "0px"
                 }
-            },400)
+            }, 400)
         },
         open: function(){
             $collapse.style.height = "auto"
@@ -67,7 +67,7 @@
     $toggle.addEventListener('click', function(e){
         if ($navbar.className.indexOf('in') > 0) {
             __HuxNav__.close()
-        }else{
+        } else {
             __HuxNav__.open()
         }
     })

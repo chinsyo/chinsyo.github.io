@@ -1,9 +1,9 @@
 > What's up bro? Nice to meet you.
 
-I'm Chinsyo, human, female, young, married.
+I'm Chinsyo, human, male, young, married.
 
-Ungifted programmer, focus on iOS development, learning golang recently.
+An unskillful programmer, focus on iOS development. Recently learning to programming with golang. 
 
-Ungifted writer, but always do my best.
+An unskillful writer, but always do my best.
 
 As you know, I'm nice looking.

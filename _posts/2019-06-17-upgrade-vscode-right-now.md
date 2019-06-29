@@ -1,5 +1,6 @@
 ---
 title: 来不及了，快去更新 VSCode
+subtitle: Upgrade VSCode right now
 date: 2019-06-17 12:00:00
 tags:
   - 软件

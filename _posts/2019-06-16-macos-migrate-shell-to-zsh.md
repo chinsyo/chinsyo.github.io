@@ -1,5 +1,6 @@
 ---
 title: macOS Catalina 替换默认 Shell 为 zsh
+subtitle: macOS migrate shell to zsh
 date: 2019-06-16 12:00:00
 tags:
   - 苹果
@@ -14,5 +15,6 @@ WWDC19 发布了 macOS Catalina 预览版操作系统，除了功能更新外还
 
 zsh 和 bash 很大程度上兼容，尽管如此，还是建议在脚本开头加上 #! /bin/zsh 指定使用的 shell。转向 zsh 更容易拥有可扩展、可定制的 shell 环境，当初吸引我转向 zsh 的也是 oh-my-zsh 项目展示的强大的插件和优雅的主题，大家不妨按照教程配置体验一次「你从未体验过的船新版本」。 
 
-（吐槽 
+（吐槽
+
 最近在读的《C陷阱与缺陷》和《C专家编程》都提到了 Bourne Shell 作者使用宏将 C 语言的语法改造成贴近 Algo 语法的故事，并且表达了一致的嗤之以鼻。我对此也嗤之以鼻。

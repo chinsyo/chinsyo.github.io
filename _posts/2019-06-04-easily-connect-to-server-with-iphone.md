@@ -1,6 +1,8 @@
 ---
 title: 通过 iPhone 随时随地连接服务器
+subtitle: Easily connect to server with iPhone
 date: 2019-06-04 12:00:00
+tags:
   - iOS
   - 应用
   - 服务器

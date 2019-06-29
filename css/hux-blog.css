@@ -222,7 +222,6 @@
   display: block;
   width: 100%;
   height: 100%;
-  /*font-family: 'Roboto';*/
   font-size: 1em;
   color: #000000;
   text-transform: uppercase;
@@ -254,7 +253,6 @@
 }
 button.paper-button {
   border: 0;
-  /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
   background-color: #ffffff;
@@ -1025,6 +1023,7 @@ samp {
 .intro-header .page-heading {
   padding: 85px 0 55px;
   color: white;
+  text-shadow: 2pt 2pt 3pt #444;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
