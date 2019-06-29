@@ -1,0 +1,11 @@
+ga_analytics: "UA-131370814-1"
+plugins: 
+  - jemoji
+  - jekyll-feed
+  - jekyll-avatar
+  - jekyll-sitemap
+  - jekyll-mentions
+exclude: 
+  - "README.md"
+  - "LICENSE"
+  - "CNAME"

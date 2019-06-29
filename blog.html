@@ -1,0 +1,12 @@
+---
+layout: page
+description: "null"
+---
+
+<ul>
+{% for post in site.posts %}
+    <li>
+        <p><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.author }}</p>
+    </li>
+{% endfor %}
+</ul>
