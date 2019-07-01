@@ -119,7 +119,7 @@
 				linkHref = self.getHash($(this));
 				$target = $('#' + linkHref);
 
-				if($target.length) {
+				if ($target.length) {
 					topPos = $target.offset().top;
 					self.sections[linkHref] = Math.round(topPos);
 				}
@@ -173,7 +173,6 @@
 					}
 				});
 			}
-
 			e.preventDefault();
 		},
 
@@ -221,4 +220,4 @@
 		});
 	};
 
-})( jQuery, window , document );
+})(jQuery, window , document);

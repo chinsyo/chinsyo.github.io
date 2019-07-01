@@ -50,6 +50,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-mentions
   
 
 
@@ -112,5 +113,23 @@ friends:
     title: "Garan no dou"
     href: "https://blog.ibireme.com/"
   -
-    title: "sunnyxx"
-    href: "http://blog.sunnyxx.com/"
+    title: "火辣辣"
+    href: "http://huolalaweb.com"
+  -
+    title: "alpha 的博客"
+    href: "https://alpha2016.github.io/"
+  -
+    title: "码农的自留地"
+    href: "https://quxiaolei.github.io/"
+  -
+    title: "极客兔兔"
+    href: "https://geektutu.com"
+  -
+    title: "fengxianqi"
+    href: "https://www.fengxianqi.com"
+  -
+    title: "rffan 实验室"
+    href: "https://rffanlab.com/"
+  -
+    title: "挨踢极客"
+    href: "https://blog.itjk.me"
