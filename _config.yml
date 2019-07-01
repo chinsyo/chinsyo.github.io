@@ -30,9 +30,17 @@ anchorjs: true
 defaults:
   -
     scope: 
+      path: ""
       type: posts
     values:
       layout: post
+      author: Chinsyo
+  -
+    scope:
+      path: ""
+      type: subjects
+    values:
+      layout: subject
       author: Chinsyo
 
 # if you want to customize anchor. check out line:181 of `post.html`
@@ -51,7 +59,15 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-mentions
-  
+
+
+
+# Collections
+collections:
+  subjects:
+    output: true
+    permalink: /subject/:path
+
 
 
 # Markdown settings
@@ -93,12 +109,6 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
-
-
-
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: false
 
@@ -108,28 +118,45 @@ page-mathjax: false
 friends: 
   - 
     title: "OneV's Den"
+    subtitle: "嗨，我是王巍 (@onevcat)，一名 iOS 开发者。"
     href: "https://onevcat.com/"
   -
     title: "Garan no dou"
+    subtitle: "一只魔法师的工坊"
     href: "https://blog.ibireme.com/"
   -
     title: "火辣辣"
-    href: "http://huolalaweb.com"
-  -
-    title: "alpha 的博客"
-    href: "https://alpha2016.github.io/"
-  -
-    title: "码农的自留地"
-    href: "https://quxiaolei.github.io/"
+    subtitle: "前端博客"
+    href: "http://huolalaweb.com/"
   -
     title: "极客兔兔"
-    href: "https://geektutu.com"
+    subtitle: "致力于分享有趣的技术实践"
+    href: "https://geektutu.com/"
   -
     title: "fengxianqi"
-    href: "https://www.fengxianqi.com"
+    subtitle: "静心沉淀，思考进阶。"
+    href: "https://www.fengxianqi.com/"
   -
     title: "rffan 实验室"
+    subtitle: "一个高端大气上档次的网站"
     href: "https://rffanlab.com/"
   -
     title: "挨踢极客"
-    href: "https://blog.itjk.me"
+    subtitle: "人生苦短，我想编程"
+    href: "https://blog.itjk.me/"
+  -
+    title: "邱青岑的个人博客"
+    subtitle: "有幸与你见证技术的变迁"
+    href: "https://www.imwhite.com.cn/"
+  -
+    title: "麦田博客"
+    subtitle: "记录技术与生活。"
+    href: "https://www.myting.net/"
+  -
+    title: "阿里小太阳"
+    subtitle: "小太阳昌仔 永远照耀你"
+    href: "http://haoufo.com"
+  -
+    title: "码农的自留地"
+    subtitle: "码农的自留地"
+    href: "https://quxiaolei.github.io"

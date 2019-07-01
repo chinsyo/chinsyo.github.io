@@ -8,7 +8,7 @@ tags:
   - 安全
 ---
 
-CryptoKit 旨在安全高效的执行加解密操作，极大的减少加解密需要编写的模板代码。开发文档显示目前仅支持 Swift。Apple 平台编程语言的嫡长子 Objective-C 未能享受此次更新带来的便利，仍然需要使用更加底层的 Security 和 CommonCrypto。 
+CryptoKit 旨在安全高效的执行加解密操作，减少加解密需要编写的模板代码。开发文档显示该框架目前仅支持 Swift, 嫡长子 Objective-C 未能享受此次更新带来的便利，仍然需要使用更加底层的 Security 和 CommonCrypto。 
 
 CryptoKit 在以下几方面有提升:
 1. 依托 Swift 简洁的语法，新框架生成 256bit 的对称密钥仅需一行代码（在之前的官方文档中需要至少 7 行）。 
