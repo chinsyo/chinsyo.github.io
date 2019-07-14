@@ -59,6 +59,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-mentions
+  
+  
+  
+# miit beian
+beian: "豫ICP备19019838号-1"
 
 
 
