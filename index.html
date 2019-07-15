@@ -15,11 +15,7 @@ description: "得到的都是侥幸 失去的都是人生"
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:200 }}
-            {% else %}
-                {{ post.content | strip_html | truncate:150 }}
-            {% endif %}
+            {{ post.content | strip_html | truncate:150 }}
         </div>
     </a>
     <p class="post-meta">

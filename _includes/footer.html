@@ -7,7 +7,7 @@
                 {% include sns-links.html center=true %}
 
                 <p class="copyright text-muted">
-                    Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                    Copyright &copy; <a target="_blank" rel="nofollow noopener" href="{{ site.url }}">{{ site.title }}</a> {{ site.time | date: '%Y' }}
                     <br>
                     Powered by <a href="https://jekyllrb.com/">Jekyll</a> | Theme <a href="https://huangxuan.me">Hux Blog</a>
                     <iframe
@@ -40,8 +40,6 @@
       s.parentNode.insertBefore(o, s);
     }
 </script>
-
-
 
 {% if page.title == 'Archive' %}
 <!-- jquery.tagcloud.js -->
@@ -83,13 +81,6 @@
 {% if page.catalog %}
 <script type="text/javascript">
     function generateCatalog (selector) {
-
-        // interop with multilingual 
-        // if ('{{ page.multilingual }}' == 'true') {
-        //     _containerSelector = 'div.post-container.active'
-        // } else {
-        //     _containerSelector = 'div.post-container'
-        // }
 
         // init
         var P = $(_containerSelector),a,n,t,l,i,c;
