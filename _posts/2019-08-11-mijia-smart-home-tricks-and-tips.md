@@ -1,6 +1,6 @@
 ---
 title: 米家智能家居选购指南 & 体验报告
-subtitle: Smart home tricks and tips
+subtitle: Mijia smart home tricks and tips
 date: 2019-08-11 12:00:00
 tags:
   - 体验报告
