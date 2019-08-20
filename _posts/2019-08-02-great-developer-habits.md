@@ -1,5 +1,5 @@
 ---
-title: WWDC19 Session 239 - 开发良策
+title: "[翻译] WWDC19 Session 239 - 开发良策"
 subtitle: Great Developer Habits
 date: 2019-08-02 12:00:00
 tags:
