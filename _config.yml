@@ -38,7 +38,7 @@ defaults:
   -
     scope:
       path: ""
-      type: subjects
+      type: projects
     values:
       layout: subject
       author: Chinsyo
@@ -69,9 +69,9 @@ beian: "豫ICP备19019838号-1"
 
 # Collections
 collections:
-  subjects:
+  projects:
     output: true
-    permalink: /subject/:path
+    permalink: /project/:path
 
 
 
@@ -111,11 +111,6 @@ sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in bot
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
-
-# MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
 
 
 

@@ -1,0 +1,32 @@
+---
+layout: page
+title: "Projects"
+description: "逝者如斯夫 不舍昼夜"
+header-img: "img/project-bg.jpg"
+---
+
+<div class="post-container">
+    {% if site.projects %}
+    <ul class="list-unstyled">
+        {% for project in site.projects %}
+        <li class="primary">
+            <h2 style="display: inline; height: 64px;">{{ project.title }}</h2>
+            <span style="display: inline; line-height: 64px;" class="pull-right">{{ project.time }}</span>
+            <img src="/{{ project.image | prepend: site.dir }}">
+            <p>{{ project.description | replace: "\", "" }}</p>
+            <ul class="list-inline list-unstyled" style="margin-top: 10pt;">
+                {% for skill in project.skill %}
+                <li>
+                    <span style="padding-right: 10pt;"><b>{{ skill }}</b></span>
+                </li>
+                {% endfor %}
+                <li class="pull-right">
+                    <span><a target="_blank" href="{{ project.link }}">Try it</a></span>
+                </li>
+            </ul>
+        </li>
+        <hr>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
