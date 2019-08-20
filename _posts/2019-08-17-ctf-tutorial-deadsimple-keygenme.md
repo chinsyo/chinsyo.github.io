@@ -137,11 +137,11 @@ cvtsi2sd是将DWORD(4字节)整型数转换为浮点型数，cvttsd2si则反之�
 
 对照伪代码写出Objective-C的代码，得出结论注册码有以下几个要求:
 
- 注册码应该为使用连字符连接的两个数字
-连字符的后半部分数字应该为前半部分数字的平方
-连字符的前半部分数字应该为 name 字符串 ascii 编码的数值之和
+* 注册码应该为使用连字符连接的两个数字
+* 连字符的后半部分数字应该为前半部分数字的平方
+* 连字符的前半部分数字应该为 name 字符串 ascii 编码的数值之和
 
-```Objective-C
+```objc
 - (BOOL)checkCode:(NSString *)code forName:(NSString *)name {
     NSArray *comps = [code componentsSeparatedByString:@"-"];
     if (comps.count == 2) {

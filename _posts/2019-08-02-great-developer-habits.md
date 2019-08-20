@@ -8,7 +8,7 @@ tags:
   - 翻译
 ---
 
-尝试翻译了 WWDC 的 Great Developer Habits 。
+尝试翻译了 WWDC19 的 Session 239: Great Developer Habits。[视频链接](https://developer.apple.com/videos/play/wwdc2019/239/)
 
 ### 组织项目
 
