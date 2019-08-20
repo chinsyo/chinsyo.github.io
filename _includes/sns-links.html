@@ -1,13 +1,4 @@
-{% comment %}
-    @param {Boolean} center 
-{% endcomment %}
-
-{% if include.center %}
 <ul class="list-inline text-center">
-{% else %}
-<ul class="list-inline">
-{% endif %}
-
   {% if site.RSS %}
   <li>
     <a href="{{ "/feed.xml" | prepend: site.dir }}">
