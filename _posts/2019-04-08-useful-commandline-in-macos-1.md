@@ -15,6 +15,7 @@ macOS 是 Apple 旗下 Mac 系列电脑搭载的操作系统，它以 Mach 内�
 由于很多命令会隐含英语缩写，下文会适当标明一些缩写方便记忆和理解。
 
 * 关机重启
+
 ```bash
 # 重启电脑
 sudo reboot
@@ -25,12 +26,14 @@ sudo shutdown -h 10
 ```
 
 * 防止电脑进入休眠
+
 ```bash
 # 3600 为 1 小时的秒数, 可修改为其他值
 caffeinate -u -t 3600
 ```
 
 * 后台任务相关
+
 ```bash
 # nohup = no hangup (不挂断，忽略终端的 SIGHUP), 终端退出后继续运行
 # & 表示在后台运行, sleep 100 可以替换为需要运行的命令
@@ -42,6 +45,7 @@ fg %1
 ```
 
 * DNS 相关操作
+
 ```bash
 # 清除 DNS 缓存
 sudo killall -HUP mDNSResponder; 
@@ -56,6 +60,7 @@ done <<< "$IN"
 ```
 
 * 环境变量
+
 ```bash
 printenv # 打印系统环境变量
 set KEY=VALUE # 设置环境变量
@@ -65,6 +70,7 @@ source FILEPATH # 读取并执行文件, 对当前 shell 可见
 ```
 
 * 日期相关操作
+
 ```bash
 # 查看当前月份日历
 cal 
@@ -75,6 +81,7 @@ date
 ```
 
 * 系统信息
+
 ```bash
 # 当前系统信息
 # Darwin shawn-imac.local 18.2.0 Darwin Kernel Version 18.2.0: Thu Dec 20 20:46:53 PST 2018; root:xnu-4903.241.1~1/RELEASE_X86_64 x86_64
@@ -90,6 +97,7 @@ sw_vers
 ```
 
 * 获取CPU信息
+
 ```bash
 # cpu核心数
 sysctl -a | grep -Eo "core_count:(.+?)$" 
@@ -98,6 +106,7 @@ sysctl -n machdep.cpu.brand_string
 ```
 
 * 安全选项
+
 ```bash
 # 配置系统安全策略
 # 启用后可以调试系统应用
@@ -108,6 +117,7 @@ sudo spctl --master-disable
 ```
 
 * WIFI 操作
+
 ```bash
 # 首先设置 airport 工具的软链接
 sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
@@ -126,6 +136,7 @@ networksetup -setairportnetwork en0 WIFI_SSID WIFI_PASSWORD
 ```
 
 * SSH 连接
+
 ```bash
 # 生成 SSH 连接的密钥对
 ssh-keygen -t rsa;
@@ -138,6 +149,7 @@ echo -e "Host ALIAS\n    HostName HOSTADDR\n    User USERNAME" >> ~/.ssh/config;
 ```
 
 * 编码相关
+
 ```bash
 # 查看输入文本的 MD5 摘要
 md5 -xs "Hello world!"
@@ -152,6 +164,7 @@ afconvert input.mp3 rintone.m4r -f m4af
 ```
 
 * 网络开发相关
+
 ```bash
 # 查询域名的过期时间
 whois baidu.com | grep Expiry | sed -n "s/Registry Expiry Date://p" || echo "No matching result"
