@@ -58,9 +58,8 @@
 
 
 <script>
-    async("//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js", function () {
+    async("//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js", function(){
         $(document).ready(function ($) {
-            // geopattern
             $('.geopattern').each(function () {
                 $(this).geopattern($(this).data('pattern-id'));
             });

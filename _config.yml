@@ -62,6 +62,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-mentions
+  - jekyll-redirect-from
   - jekyll-github-metadata
 
 
@@ -97,7 +98,7 @@ disqus_username: chinsyo
 
 # Google Analytics
 ga_track_id: "UA-131370814-1"            # Format: UA-xxxxxx-xx
-adsense_id: "ca-pub-3082878493327361"
+# adsense_id: "ca-pub-3082878493327361"
 
 
 # Sidebar settings
@@ -159,3 +160,7 @@ friends:
     title: "码农的自留地"
     subtitle: "码农的自留地"
     href: "https://quxiaolei.github.io"
+  -
+    title: "曲奇泡芙"
+    subtitle: "stay interesting.."
+    href: "http://weng.ai"
