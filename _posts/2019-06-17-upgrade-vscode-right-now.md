@@ -7,6 +7,8 @@ tags:
   - 简讯
 ---
 
+![](http://pwj4lonpu.bkt.clouddn.com/vscode-remote.png)
+
 本月发布的 VSCode 新版本将预览版中的远程开发功能正式发布。本次更新还带来了新的图标和数个加强易用性的功能。 
 
 1. 加强了跳转到实现功能
