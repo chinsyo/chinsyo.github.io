@@ -17,6 +17,10 @@ github_username: chinsyo
 mailme_username: lPf8-frn7fvU5eW69-v5
 
 
+# Repositories
+repository: chinsyo/chinsyo.github.io
+
+
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -58,11 +62,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-mentions
-  
-  
-  
-# miit beian
-beian: "豫ICP备19019838号-1"
+  - jekyll-github-metadata
 
 
 

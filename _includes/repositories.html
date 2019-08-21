@@ -1,0 +1,33 @@
+<hr>
+<h5>Repositories</h5>
+{% if site.github.public_repositories != null %}
+{% assign repos = site.github.public_repositories | sort: "updated_at" | reverse %}
+{% for repo in repos | limit: 3 %}
+<a href="{{ repo.html_url }}" target="_blank" class="card text-center">
+    <div class="thumbnail">
+        <div class="card-image geopattern" data-pattern-id="{{ repo.name }}">
+            <div class="card-image-cell">
+                <h3 class="card-title">
+                    {{ repo.name }}
+                </h3>
+            </div>
+        </div>
+        <div class="caption">
+            <div class="card-description">
+                <p class="card-text">{{ repo.description | strip_html }}</p>
+            </div>
+            <div class="card-text">
+                <span class="meta-info" title="{{ repo.stargazers_count }} stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>{{ repo.stargazers_count }}
+                </span>
+                &nbsp;
+                <span class="meta-info" title="Last updated：{{ repo.updated_at }}">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <time datetime="{{ repo.updated_at }}">{{ repo.updated_at | date: '%Y-%m-%d' }}</time>
+                </span>
+            </div>
+        </div>
+    </div>
+</a>
+{% endfor %}
+{% endif %}

@@ -10,8 +10,6 @@
                     Copyright &copy; <a target="_blank" rel="nofollow noopener" href="{{ site.url }}">{{ site.title }}</a> {{ site.time | date: '%Y' }}
                     <br>
                     Powered by <a href="https://jekyllrb.com/">Jekyll</a> | Theme <a href="https://huangxuan.me">Hux Blog</a>
-                    <br>
-                    <a target="_blank" rel="nofollow noopener" href="http://beian.miit.gov.cn">{% if site.beian %}{{ site.beian }}{% endif %}</a>
                 </p>
             </div>
         </div>
@@ -53,7 +51,20 @@
 <script>
     async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
         var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
+        if ($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js", function () {
+        $(document).ready(function ($) {
+            // geopattern
+            $('.geopattern').each(function () {
+                $(this).geopattern($(this).data('pattern-id'));
+            });
+        });
     })
 </script>
 
