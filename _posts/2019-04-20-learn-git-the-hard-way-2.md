@@ -79,8 +79,6 @@ git push
 
 点击 Clone or download 按钮，展开选项，可以通过点击 Use HTTPS 按钮切换到 https 的连接方式，如果你还不清楚这个按钮的影响，出于安全的考虑建议你不要这么做。
 
-
-
 点击 Download ZIP 下载仓库，或者使用文本框内的 Git 地址进行克隆。
 
 ```bash
@@ -92,26 +90,17 @@ git clone git@github.com:chinsyo/learning-git.git
 ```bash
 git clone git@github.com:chinsyo/learning-git.git --depth 1
 ```
-
 ### 拉取远程提交记录
 
 通过以上两步，团队成员都有了和远程仓库关联的本地仓库，接下来可以使用 git pull 拉去远程提交记录，学习过程中可以通过在 GitHub 网页端对文件进行修改模拟同事的提交，也欢迎 fork 我的项目 https://github.com/chinsyo/learning-git 让我充当你的同事。
-
-
 
 ### 解决合并冲突
 
 岁月静好，现世安稳。你和同事躬耕在各自的一亩三分地，直到某一天你提交本地记录时出现了错误。
 
-
-
 错误信息显示你本地记录不是最新，需要先拉取远程变更，it's easy，执行 git pull 命令。
 
-
-
 如提示所言，greeting.txt 文件发生了冲突，cat greeting.txt 查看冲突的内容。
-
-
 
 冲突的内容如上所示，文件中出现了连续的大于号(>>>)，小于号(<<<)和等号(===)。这是 Linux 系统 diff 的格式，diff 即差异(diffrence)的缩写，具体的格式可以 man diff 查阅文档。简单的说，<<< 表示本地提交的文件内容，>>> 表示远程提交的文件内容，=== 表示分隔符。
 
@@ -119,35 +108,19 @@ git clone git@github.com:chinsyo/learning-git.git --depth 1
 
 那么，我们只需要删除 >>>，<<< 和 === 开头的 diff 内容，并删除 === 和 >>> 之间的内容(远程提交的文件内容，经过协商不需要保留)，修改后的文件内容如下图。
 
-
-
 这时使用 git status 查看本地仓库的最新状态。
-
-
 
 如提示所言，经过一番友好的暴揍，你和同事已经就解决方案达成共识并由你修改了冲突，这时只需要将冲突解决完毕的文件添加到暂存区。
 
-
-
 再次查看本地仓库的最新状态。
-
-
 
 对于我们冲突已解决，因此按照提示 git commit 提交，由于没有指定提交信息，自动跳转到输入提交信息的页面。
 
-
-
 使用默认提交信息，在 vi 界面输入 :wq 保存并退出，回到 Shell 主界面会在 git commit 下方显示我们这次解决冲突的提交信息。
-
-
 
 这时再次使用 git push 推送我们已经解决了冲突的本地改动。
 
-
-
 查看 Git 提交日志，能看到自己的提交、同事的提交以及对两者文件冲突进行合并的提交。其中 chinsyo@sina.cn 是本地提交的用户，chinsyo@users.noreply.github.com 是通过 GitHub 网页模拟的同事。
-
-
 
 ### 获得帮助
 
