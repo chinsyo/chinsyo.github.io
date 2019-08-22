@@ -43,7 +43,7 @@ defaults:
       path: ""
       type: projects
     values:
-      layout: subject
+      layout: project
       author: Chinsyo
 
 # if you want to customize anchor. check out line:181 of `post.html`

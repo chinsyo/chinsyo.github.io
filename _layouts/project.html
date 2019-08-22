@@ -18,7 +18,7 @@ layout: default
 
                 {{ content }}
 
-                {% for article in subject.articles %}
+                {% for article in project.articles %}
                 <div>
                     <a href="{{ article.url | prepend: site.dir }}">
                         <h2>
