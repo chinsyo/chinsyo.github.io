@@ -10,9 +10,9 @@ tags:
   - Google
 ---
 
-身体抱恙，请假休息。闲来无事打开 Google 检查下博客收录情况，因为使用了 Analytics 服务所以有印象收录页面大概40个左右。
+身体抱恙，请假休息。闲来无事打开 Google 检查下博客收录情况，日常查看 Search Console 数据收录页面大概 40 个左右。
 
-在搜索栏输入`site:chinsyo.com`，今天发现搜索结果有些异常，居然足足有 8 页数据。
+今天发现搜索结果有些异常，在搜索栏输入`site:chinsyo.com`，居然足足有 8 页数据。
 
 ![](http://pwj4lonpu.bkt.clouddn.com/trouble-google-whole.png)
 

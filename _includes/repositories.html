@@ -1,5 +1,5 @@
 <hr>
-<h5>Repositories</h5>
+<h5>REPOS</h5>
 {% if site.github.public_repositories != null %}
 {% assign repos = site.github.public_repositories | sort: "updated_at" | reverse %}
 {% for repo in repos | limit: 3 %}
