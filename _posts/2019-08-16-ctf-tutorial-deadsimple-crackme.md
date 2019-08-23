@@ -175,7 +175,7 @@ DeadSimple[0x1d63] <+80>:  je     0x1d9f
 $ vi -b DeadSimple
 ```
 
-![](http://pwj4lonpu.bkt.clouddn.com/imgdeadsimple-ui-empty.jpg)
+![](http://pwj4lonpu.bkt.clouddn.com/imgdeadsimple-vi-text.jpg)
 
 放眼望去满是^和@组成的符号，这是因为二进制文件不是有效的ascii可视字符，在vi输入:%!xxd 进入hex编辑模式，这下顺眼多了。
 
