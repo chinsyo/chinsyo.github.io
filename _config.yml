@@ -1,9 +1,10 @@
 # Site settings
-title: Chinsyo | 晨晓
+title: Chinsyo Blog
+seo-title: 王晨晓的博客 | Chinsyo Blog
 header-img: img/home-bg.jpg
 email: chinsyo@qq.com
-description: "Noob & Geek | 我心匪石"
-keyword: "Blog, 博客, 互联网, 科技, iOS, Golang, 编程, 开发"
+description: "王晨晓的博客 | 开发工程师,关注数据、设计、效率"
+keyword: "王晨晓, Blog, 博客, 苹果, iOS, macOS, Python, 编程, 开发"
 url: "https://chinsyo.com"              # your host, for absolute URL
 dir: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -43,7 +44,7 @@ defaults:
       path: ""
       type: projects
     values:
-      layout: subject
+      layout: project
       author: Chinsyo
 
 # if you want to customize anchor. check out line:181 of `post.html`

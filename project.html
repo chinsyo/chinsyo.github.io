@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Projects"
+title: "Project"
 description: "逝者如斯夫 不舍昼夜"
 header-img: "img/project-bg.jpg"
 ---
@@ -10,8 +10,6 @@ header-img: "img/project-bg.jpg"
     <ul class="list-unstyled">
         {% for project in site.projects %}
         <li class="primary">
-            <h2 style="display: inline; height: 64px;">{{ project.title }}</h2>
-            <span style="display: inline; line-height: 64px;" class="pull-right">{{ project.time }}</span>
             <img src="/{{ project.image | prepend: site.dir }}">
             <p>{{ project.description | replace: "\", "" }}</p>
             <ul class="list-inline list-unstyled" style="margin-top: 10pt;">

@@ -12,6 +12,8 @@ tags:
 
 ### 组织项目
 
+![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_organize.jpg)
+
 - 项目内容按功能分组
 - 项目布局与文件一致
 - 拆解复杂Storyboard
@@ -21,12 +23,16 @@ tags:
 
 ### 版本管理
 
+![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_track.jpg)
+
 - 务必要使用版本管理
 - 保持提交内容的精巧
 - 书写有效的提交信息
 - 善用缺陷和特性分支
 
 ### 文档注释
+
+![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_document.jpg)
 
 - 注释攸关未来还能否理解
 - 好的注释提供背景和意图
@@ -35,11 +41,15 @@ tags:
 
 ### 单元测试
 
+![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_unittests.jpg)
+
 - 务必要书写单元测试
 - 每次提交前运行测试
 - 构建持续集成的基础
 
 ### 动态分析
+
+![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_analyze.jpg)
 
 - 使用 Network Link Conditioner 模拟弱网环境
 - 使用 Sanitizer 和 Checker 防范常见问题
@@ -47,6 +57,8 @@ tags:
 - 使用 Instruments 定位问题根源
 
 ### 代码评审
+
+![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_evaluate.jpg)
 
 - 将代码评审引入实践
 - 理解每行代码
@@ -56,6 +68,8 @@ tags:
 
 ### 代码解耦
 
+![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_decouple.jpg)
+
 - 按功能分割代码
 - 在不同应用间复用代码
 - Extension 使用 Framework 减小体积
@@ -63,6 +77,8 @@ tags:
 - 文档性命攸关，务必为 Framework 写好文档
 
 ### 依赖管理
+
+![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_manage.jpg)
 
 - 审慎的使用开源项目作为依赖
 - 透彻的理解所依赖的开源项目

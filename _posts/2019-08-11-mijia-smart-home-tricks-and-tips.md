@@ -6,6 +6,7 @@ tags:
   - 体验报告
   - 智能家居
   - 小米
+redirect_from: /2019/08/11/smart-home-tricks-and-tips/
 ---
 
 ![](http://pwj4lonpu.bkt.clouddn.com/mijia-smart-home.jpg)
