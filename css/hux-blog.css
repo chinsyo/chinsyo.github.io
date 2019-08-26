@@ -1658,7 +1658,6 @@ img::-moz-selection {
     margin: 0;
     font-size: 1.5em;
     color: white;
-    overflow: hidden;
 }
 .card-image a {
     color: #fff;
