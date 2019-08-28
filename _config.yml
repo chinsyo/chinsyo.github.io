@@ -117,14 +117,6 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 # Friends
 friends: 
-  - 
-    title: "OneV's Den"
-    subtitle: "嗨，我是王巍 (@onevcat)，一名 iOS 开发者。"
-    href: "https://onevcat.com/"
-  -
-    title: "Garan no dou"
-    subtitle: "一只魔法师的工坊"
-    href: "https://blog.ibireme.com/"
   -
     title: "火辣辣"
     subtitle: "前端博客"
