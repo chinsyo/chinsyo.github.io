@@ -20,6 +20,7 @@ mailme_username: lPf8-frn7fvU5eW69-v5
 
 # Repositories
 repository: chinsyo/chinsyo.github.io
+exclude: ['README.md']
 
 
 
