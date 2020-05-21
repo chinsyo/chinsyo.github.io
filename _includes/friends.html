@@ -1,7 +1,7 @@
 {% if site.friends %}
 <section class="visible-md visible-lg">
 <hr>
-<h5>FRIENDS</h5>
+<h5><a href="{{'/' | prepend: site.dir }}">FRIENDS</a></h5>
 <ul class="list-inline">
   {% for friend in site.friends %}
   <li><a href="{{friend.href}}" title="{% if friend.subtitle %}{{ friend.subtitle }}{% endif %}">{{ friend.title }}</a></li>
