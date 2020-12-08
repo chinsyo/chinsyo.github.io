@@ -1,2 +1,2 @@
 # chinsyo.github.io
-Chinsyo.com | My Blog / Jekyll Theme.
+Chinsyo.com | Personal Blog / Jekyll Theme.
