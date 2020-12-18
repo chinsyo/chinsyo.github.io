@@ -59,18 +59,6 @@
 
 
 
-<script>
-    async("//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js", function(){
-        $(document).ready(function ($) {
-            $('.geopattern').each(function () {
-                $(this).geopattern($(this).data('pattern-id'));
-            });
-        });
-    })
-</script>
-
-
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 {% if site.ga_track_id %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_track_id }}"></script>
