@@ -1,5 +1,5 @@
 ---
-title: 记一次域名劫持的诊断与抢救
+title: GitHub Pages域名劫持的诊断与抢救
 subtitle: DNS Record Troubleshoot
 date: 2019-08-21 12:00:00
 tags:
