@@ -1,6 +1,6 @@
 ---
 title: Git如何下载仓库子目录
-subtitle: Git, How to download subdirectory?
+subtitle: How to download git subdirectory?
 date: 2019-11-24 12:00:00
 tags:
   - Git
