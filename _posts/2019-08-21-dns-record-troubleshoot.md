@@ -1,6 +1,6 @@
 ---
 title: 记一次域名劫持的诊断与抢救
-subtitle: Protect DNS record
+subtitle: DNS Record Troubleshoot
 date: 2019-08-21 12:00:00
 tags:
   - 服务器
@@ -14,27 +14,27 @@ tags:
 
 今天发现搜索结果有些异常，在搜索栏输入`site:chinsyo.com`，居然足足有 8 页数据。
 
-![](http://pwj4lonpu.bkt.clouddn.com/trouble-google-whole.png)
+![](https://cdn.chinsyo.com/img/dns-record-troubleshoot/01.jpeg)
 
 事出反常必有妖，当翻到第 3 页尾部的时候发现了端倪。我的域名怎么会出现俄文搜索结果，而且是一个我从未开放的子域名，莫非是恶意 SEO？
 
 点击搜索结果，地址栏出现的确实是我的域名。
 
-![](http://pwj4lonpu.bkt.clouddn.com/trouble-screenshot-subdomain.png)
+![](https://cdn.chinsyo.com/img/dns-record-troubleshoot/02.jpeg)
 
 看来这次确实摊上事了，先确定一下这个子域名都劫持了什么内容，截图留证。同理在搜索栏输入`site:cahtong.chinsyo.com`。
 
-![](http://pwj4lonpu.bkt.clouddn.com/trouble-google-subdomain.png)
+![](https://cdn.chinsyo.com/img/dns-record-troubleshoot/03.jpeg)
 
 大概浏览一遍搜索结果，还好没有违法信息，稍微缓和一口气。
 
 这时回想整个事件，我的域名 2015 年注册，期间一直绑定在`name.com`账号下，接触到`namesilo.com`后发现价格有不小的优惠，于是转移到了`namesilo.com`账号下。那么会是转移后 DNS Server 设置错误吗？
 
-![](http://pwj4lonpu.bkt.clouddn.com/trouble-dns-server.png)
+![](https://cdn.chinsyo.com/img/dns-record-troubleshoot/04.jpeg)
 
 急忙登录账号检查，并没有异常。难道是 DNS Pod 的记录被篡改了？鉴于腾讯的一贯尿性……
 
-![](http://pwj4lonpu.bkt.clouddn.com/trouble-dns-record.png)
+![](https://cdn.chinsyo.com/img/dns-record-troubleshoot/05.jpeg)
 
 DNS 记录也是正常的，108~111 都是 GitHub 的 IP，这下犯难了，先查一下子域名的 DNS 记录再说。
 
@@ -68,7 +68,7 @@ $ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder;
 
 一番搜索之后找到 Google 提供的删除页面。
 
-![](http://pwj4lonpu.bkt.clouddn.com/trouble-google-removal.png)
+![](https://cdn.chinsyo.com/img/dns-record-troubleshoot/06.jpeg)
 
 同样的，这里也有一个小插曲。Google 提供了三种删除申请，分别是过期内容报告，违法内容投诉和站长主动删除。第一反应当然是站长主动删除，然而我只认证了根域名，而 Google 将根域名和子域名视为不同权限。为了避免违法内容影响到权重，并且现在被污染的子域名已经无法访问，只好退而求其次选择了过期内容报告。
 
