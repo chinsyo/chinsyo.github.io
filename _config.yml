@@ -1,5 +1,5 @@
 # Site settings
-title: Chinsyo Blog
+title: 晨晓 | Chinsyo
 seo-title: 王晨晓的博客 | Chinsyo Blog
 header-img: img/home-bg.jpg
 email: chinsyo@qq.com
@@ -95,9 +95,17 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: 
   -
-    title: "火辣辣"
-    subtitle: "前端博客"
-    href: "http://huolalaweb.com/"
+    title: "芯盾技术团队"
+    subtitle: "日月既往 不可复追"
+    href: "https://coreshield.github.io/"
+  -
+    title: "月半兄的小站"
+    subtitle: "Working on Android & Network Security"
+    href: "https://yueban.github.io/"
+  -
+    title: "珞泽珈群"
+    subtitle: "头顶的星空以及心中的道德定律"
+    href: "https://www.jianshu.com/u/679d8deee5ae"
   -
     title: "极客兔兔"
     subtitle: "致力于分享有趣的技术实践"
@@ -122,10 +130,6 @@ friends:
     title: "麦田博客"
     subtitle: "记录技术与生活。"
     href: "https://www.myting.net/"
-  -
-    title: "阿里小太阳"
-    subtitle: "小太阳昌仔 永远照耀你"
-    href: "http://haoufo.com"
   -
     title: "码农的自留地"
     subtitle: "码农的自留地"
