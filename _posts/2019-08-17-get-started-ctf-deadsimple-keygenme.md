@@ -1,6 +1,6 @@
 ---
 title: CTF入门——从编写简单KeygenMe开始
-subtitle: CTF Tutorial, DeadSimple KeygenMe
+subtitle: Get Started CTF, DeadSimple KeygenMe
 date: 2019-08-17 12:00:00
 tags:
   - CTF
