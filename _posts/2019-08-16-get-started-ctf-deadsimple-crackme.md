@@ -18,27 +18,27 @@ CrackMe是一类供人尝试破解的程序，攻击者和发布者就软件保�
 
 由于本职工作iOS研发工程师的缘故，本次示例以macOS系统为例。首先我们需要找到攻破的目标即CrackMe程序，访问 https://reverse.put.as/crackmes/ 找到页面最下方的DeadSimple进行下载，从未知来源下载软件要记得校验摘要和查杀病毒，下面是DeadSimple的摘要信息和查杀结果。
 
-![](http://pwj4lonpu.bkt.clouddn.com/imgdeadsimple-virscan.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-crackme/01.jpeg)
 
 （吐槽一下腾讯，原本打算选择腾讯哈勃的扫描结果，可我一个macOS程序居然给我扫出C盘路径和写入注册表……拜拜了您呐。）
 
 先双击运行程序看看效果，不出意外会弹出两个弹窗，分别如图。
 
-![](http://pwj4lonpu.bkt.clouddn.com/imgdeadsimple-developer-warning.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-crackme/02.png)
 
 首先提示不是通过AppStore下载，并且没有经过开发者证书签名。
 
-![](http://pwj4lonpu.bkt.clouddn.com/imgdeadsimple-update-warning.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-crackme/03.png)
 
 接着提示尚未针对您的Mac优化，这是因为CrackMe程序不包含当前x86_64的架构。
 
 前往 系统偏好设置->安全与隐私 允许安装，如下图，点击「仍要打开」。如果你的页面没有「允许从以下位置下载的应用」或运行时提醒「文件已损坏」，请参考 https://baijiahao.baidu.com/s?id=1594877309704492558&wfr=spider&for=pc 进行设置。
 
-![](http://pwj4lonpu.bkt.clouddn.com/imgdeadsimple-setting.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-crackme/04.jpeg)
 
 启动后界面包含Name和Code两个输入框，和常见的激活界面相似。
 
-![](http://pwj4lonpu.bkt.clouddn.com/imgdeadsimple-ui-empty.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-crackme/05.png)
 
 这时随便输入一些信息，如123，123。校验失败会听到错误提示音。
 
@@ -175,16 +175,16 @@ DeadSimple[0x1d63] <+80>:  je     0x1d9f
 $ vi -b DeadSimple
 ```
 
-![](http://pwj4lonpu.bkt.clouddn.com/imgdeadsimple-vi-text.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-crackme/06.jpeg)
 
 放眼望去满是^和@组成的符号，这是因为二进制文件不是有效的ascii可视字符，在vi输入:%!xxd 进入hex编辑模式，这下顺眼多了。
 
-![](http://pwj4lonpu.bkt.clouddn.com/imgdeadsimple-vi-hex.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-crackme/07.jpeg)
 
 在vi中移动光标到0x1d63对应的地址（搜索1d60，然后向后数3字节即6个hex字符），将 74 3a 修改为 90 90。输入:%xxd -r 退出hex模式并保存文件。
 
 这时再次运行软件，随便输入内容，可以看到成功提示弹窗。
 
-![](http://pwj4lonpu.bkt.clouddn.com/imgdeadsimple-ui-success.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-crackme/08.png)
 
 友情提示，修改完毕二进制后可以重新查看反汇编检验修改的结果再运行程序，由于篇幅不再展开。下一篇将围绕如何倒推校验逻辑，编写一个注册码生成程序。
