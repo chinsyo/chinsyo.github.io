@@ -81,7 +81,9 @@ ga_track_id: "UA-131370814-1"            # Format: UA-xxxxxx-xx
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Noob & Geek<br>我心匪石"
+sidebar-about-description: |+
+  Noob & Geek
+  我心匪石
 sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
