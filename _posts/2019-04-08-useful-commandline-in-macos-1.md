@@ -116,22 +116,22 @@ csrutil enable;
 sudo spctl --master-disable
 ```
 
-* WIFI 操作
+* Wi-Fi 操作
 
 ```bash
 # 首先设置 airport 工具的软链接
 sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
 # 将 airport 工具所在目录追加到 PATH 环境变量，以便直接使用
 export $PATH="/usr/local/bin:$PATH"
-# 扫描 WIFI
+# 扫描 Wi-Fi
 airport -s
-# 查看当前连接的 WIFI 名称
+# 查看当前连接的 Wi-Fi 名称
 airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'
-# 查看当前连接的 WIFI 内网 IP
+# 查看当前连接的 Wi-Fi 内网 IP
 ipconfig getifaddr en0
-# 查看当前连接的 WIFI 外网 IP
+# 查看当前连接的 Wi-Fi 外网 IP
 curl ipecho.net/plain; echo
-# 加入 WIFI
+# 加入 Wi-Fi
 networksetup -setairportnetwork en0 WIFI_SSID WIFI_PASSWORD
 ```
 
