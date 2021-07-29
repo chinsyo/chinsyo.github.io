@@ -1,5 +1,5 @@
 ---
-title: "[翻译] WWDC19 Session 239 - 开发良策"
+title: "[翻译] WWDC19 Session 239 - 巧匠良策"
 subtitle: Great Developer Habits
 date: 2019-08-02 12:00:00
 tags:
@@ -8,22 +8,22 @@ tags:
   - 翻译
 ---
 
-尝试翻译了 WWDC19 的 Session 239: Great Developer Habits。[视频链接](https://developer.apple.com/videos/play/wwdc2019/239/)
+尝试翻译了 WWDC19 的 [Session 239: Great Developer Habits](https://developer.apple.com/videos/play/wwdc2019/239/)。
 
 ### 组织项目
 
-![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_organize.jpg)
+![](https://cdn.chinsyo.com/img/great-developer-habits/01.jpg)
 
 - 项目内容按功能分组
 - 项目布局与文件一致
-- 拆解复杂Storyboard
+- 分解臃肿Storyboard
 - 保持项目的持续更新
 - 丢掉废弃的注释代码
 - 定位警告的根本原因
 
 ### 版本管理
 
-![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_track.jpg)
+![](https://cdn.chinsyo.com/img/great-developer-habits/02.jpg)
 
 - 务必要使用版本管理
 - 保持提交内容的精巧
@@ -32,7 +32,7 @@ tags:
 
 ### 文档注释
 
-![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_document.jpg)
+![](https://cdn.chinsyo.com/img/great-developer-habits/03.jpg)
 
 - 注释攸关未来还能否理解
 - 好的注释提供背景和意图
@@ -41,7 +41,7 @@ tags:
 
 ### 单元测试
 
-![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_unittests.jpg)
+![](https://cdn.chinsyo.com/img/great-developer-habits/04.jpg)
 
 - 务必要书写单元测试
 - 每次提交前运行测试
@@ -49,7 +49,7 @@ tags:
 
 ### 动态分析
 
-![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_analyze.jpg)
+![](https://cdn.chinsyo.com/img/great-developer-habits/05.jpg)
 
 - 使用 Network Link Conditioner 模拟弱网环境
 - 使用 Sanitizer 和 Checker 防范常见问题
@@ -58,19 +58,19 @@ tags:
 
 ### 代码评审
 
-![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_evaluate.jpg)
+![](https://cdn.chinsyo.com/img/great-developer-habits/06.jpg)
 
 - 将代码评审引入实践
-- 理解每行代码
+- 充分理解每一行代码
 - 运行代码，检查运行结果
 - 检查单元测试用例并运行
 - 校对风格、拼写和语法
 
 ### 代码解耦
 
-![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_decouple.jpg)
+![](https://cdn.chinsyo.com/img/great-developer-habits/07.jpg)
 
-- 按功能分割代码
+- 明确拆分功能片段代码
 - 在不同应用间复用代码
 - Extension 使用 Framework 减小体积
 - 和社区分享你的代码成果
@@ -78,7 +78,7 @@ tags:
 
 ### 依赖管理
 
-![](http://pwj4lonpu.bkt.clouddn.com/239_great_developer_habits_manage.jpg)
+![](https://cdn.chinsyo.com/img/great-developer-habits/08.jpg)
 
 - 审慎的使用开源项目作为依赖
 - 透彻的理解所依赖的开源项目
