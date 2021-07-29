@@ -69,7 +69,7 @@ Breakpoint 4: address = 0x00001ea5
 
 接下来运行程序查看断点触发的顺序，运行之前我们猜想的执行顺序如下图。
 
-![](http://pwj4lonpu.bkt.clouddn.com/deadsimple-memory-graph.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-keygenme/01.png)
 
 ```bash
 Process 13850 stopped
@@ -121,11 +121,11 @@ Target 0: (DeadSimple) stopped.
 
 通常进行静态分析之前需要对应用脱壳，本例没有加壳所以可以直接分析。
 
-![](http://pwj4lonpu.bkt.clouddn.com/deadsimple-hopper-hex.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-keygenme/02.jpeg)
 
 拖入 Hopper 依次点击1、2后查看反汇编代码，和在 lldb 中执行 disassemble 结果基本一致，这时点击3可以查看生成的伪代码。
 
-![](http://pwj4lonpu.bkt.clouddn.com/deadsimple-hopper-psedo.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-keygenme/03.jpeg)
 
 生成的伪代码已经非常接近真实代码的流程，根据上下文可以推断出返回类型是 BOOL，arg2 和 arg3 应该是 NSString 类型。
 
@@ -187,13 +187,13 @@ chenxiao: 847-717409
 
 将控制台的输出填入输入框，点击 Check 校验。
 
-![](http://pwj4lonpu.bkt.clouddn.com/deadsimple-ui-input.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-keygenme/04.png)
 
 显示正确，撒花！🎉
 
-![](http://pwj4lonpu.bkt.clouddn.com/imgdeadsimple-ui-success.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-keygenme/05.jpeg)
 
 
 以上分析的流程同样适用于现实中的软件激活，不过切记遵守法律法规。最后附一张安全专家tk教主的某乎答案自我惕励。
 
-![](http://pwj4lonpu.bkt.clouddn.com/deadsimple-tk.jpg)
+![](https://cdn.chinsyo.com/img/dead-simple-keygenme/06.jpeg)
