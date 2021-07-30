@@ -109,6 +109,14 @@ friends:
     subtitle: "头顶的星空以及心中的道德定律"
     href: "https://www.jianshu.com/u/679d8deee5ae"
   -
+    title: "曲奇泡芙"
+    subtitle: "stay interesting.."
+    href: "http://weng.ai"
+  -
+    title: "rffan 实验室"
+    subtitle: "一个高端大气上档次的网站"
+    href: "https://rffanlab.com/"
+  -
     title: "极客兔兔"
     subtitle: "致力于分享有趣的技术实践"
     href: "https://geektutu.com/"
@@ -116,10 +124,6 @@ friends:
     title: "fengxianqi"
     subtitle: "静心沉淀，思考进阶。"
     href: "https://www.fengxianqi.com/"
-  -
-    title: "rffan 实验室"
-    subtitle: "一个高端大气上档次的网站"
-    href: "https://rffanlab.com/"
   -
     title: "挨踢极客"
     subtitle: "人生苦短，我想编程"
@@ -136,7 +140,4 @@ friends:
     title: "码农的自留地"
     subtitle: "码农的自留地"
     href: "https://quxiaolei.github.io"
-  -
-    title: "曲奇泡芙"
-    subtitle: "stay interesting.."
-    href: "http://weng.ai"
+
