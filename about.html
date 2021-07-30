@@ -7,8 +7,8 @@ header-img: "img/about-bg.jpg"
 
 <!-- Chinese Version -->
 <div class="post-container">
-    {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
-    {{ about_zh | markdownify }}
+    {% capture about %}{% include about.md %}{% endcapture %}
+    {{ about | markdownify }}
 </div>
 
 {% if site.disqus_username %}
