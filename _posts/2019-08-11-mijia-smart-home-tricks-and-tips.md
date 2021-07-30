@@ -6,10 +6,7 @@ tags:
   - 体验报告
   - 智能家居
   - 小米
-redirect_from: /2019/08/11/smart-home-tricks-and-tips/
 ---
-
-![](http://pwj4lonpu.bkt.clouddn.com/mijia-smart-home.jpg)
 
 家是家庭成员的连结点，承载了生产活动之外的几乎所有时间。按照马斯洛需求金字塔，家居的需求也可以分为安全、舒适、美观、享受几个层次，作为一名研发人员，一直期望家能更有科技感。
 
