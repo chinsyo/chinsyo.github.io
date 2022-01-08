@@ -55,7 +55,7 @@ Linux raspberrypi 4.19.57-v7+ #1244 SMP Thu Jul 4 18:45:25 BST 2019 armv7l GNU/L
 访问FRP的[release页面](https://github.com/fatedier/frp/releases)查看对应架构的最新版下载地址，在服务器和树莓派分别下载并解压。
 
 ```bash
-$ mkdir -p app/install & cd app/install
+$ mkdir -p app/install && cd app/install
 $ wget https://github.com/fatedier/frp/releases/download/v0.28.2/frp_0.28.2_linux_arm.tar.gz
 $ tar -zxvf frp_0.28.2_linux_arm.tar.gz 
 $ sudo mv frp_0.28.2_linux_arm /usr/local/frp
@@ -127,7 +127,7 @@ WantedBy=multi-user.target
 
 ```bash
 # 刷新服务
-sudo systemctl deamon-reload
+sudo systemctl daemon-reload
 # 允许开机启动
 sudo systemctl enable frpc.service
 # 运行服务
