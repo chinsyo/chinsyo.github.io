@@ -1,6 +1,6 @@
 ---
 title: Git日志的一些使用技巧
-subtitle: Git log usefule tips
+subtitle: Git log useful tips
 date: 2020-01-01 12:00:00
 tags:
   - Git
