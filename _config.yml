@@ -14,7 +14,6 @@ future: true
 # SNS settings
 RSS: true
 appstore_developer_id: id1544704235
-weibo_username: chinsyo
 github_username: chinsyo
 mailme_username: lPf8-frn7fvU5eW69-v5
 
