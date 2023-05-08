@@ -97,10 +97,6 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: 
   -
-    title: "芯盾技术团队"
-    subtitle: "日月既往 不可复追"
-    href: "https://coreshield.github.io/"
-  -
     title: "月半兄的小站"
     subtitle: "Working on Android & Network Security"
     href: "https://yueban.github.io/"
