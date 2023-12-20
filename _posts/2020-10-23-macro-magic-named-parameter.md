@@ -11,7 +11,27 @@ tags:
 
 今天翻阅代码时偶然看到函数调用传入命名参数，初看以为是C语言新标准的某个语法，探究了一下源码。PoC代码如下:
 
-![](https://cdn.chinsyo.com/img/macro-magic-named-parameter/01.png)
+```c
+#include <stdio.h> 
+
+typedef struct { 
+    int max; 
+    int min;
+} range_t, *p_range_t; 
+
+#undef print_range
+void print_range(char* appname, range_t range) { 
+    printf("%s is running, {%d, %d}", appname, range.max,range.min); 
+}
+#define print_range(ptr,...)\ 
+    print_range((ptr),(range_t){__VA_ARGS__}) 
+
+int main(int argc, char* argv[]) { 
+    char* appname = (argc == 1) ? "named_parameters" : argv[1]; 
+    print_range(appname,.max= 100,.min= 20); 
+    return 0; 
+} 
+```
 
 代码很简单无需展开探讨，主要思路为通过宏定义将命名参数构造为预先定义好的结构体，留意几个细节即可。
 
