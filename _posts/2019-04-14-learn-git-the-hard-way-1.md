@@ -26,7 +26,7 @@ tags:
 
 ### 初识 Git
 
-Git 是一个分布式版本控制系统(Version Control System, 简称 VCS)，由 Linux 之父 Linus Torvalds 开发，源代码开放并托管在 https://github.com/git/git。
+Git 是一个分布式版本控制系统(Version Control System, 简称 VCS)，由 Linux 之父 Linus Torvalds 开发，源代码开放并托管在 [https://github.com/git/git](https://github.com/git/git)。
 
 不同于 SVN 等集中式版本控制系统，Git 可以脱离远程仓库离线运行，其拥有强大的非线性分支管理能力，这意味着 Git 可以快速高效的管理从个人微型规模项目到 Linux 内核这种超大规模项目。
 
